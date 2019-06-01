@@ -1,0 +1,12 @@
+[submodule "trivial-features"]
+	path = trivial-features
+	url = https://github.com/trivial-features/trivial-features.git
+[submodule "alexandria"]
+	path = alexandria
+	url = https://gitlab.common-lisp.net/alexandria/alexandria.git
+[submodule "babel"]
+	path = babel
+	url = https://github.com/cl-babel/babel.git
+[submodule "cffi"]
+	path = cffi
+	url = https://github.com/cffi/cffi.git
