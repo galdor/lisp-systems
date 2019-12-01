@@ -13,3 +13,6 @@
 [submodule "trivial-gray-streams"]
 	path = trivial-gray-streams
 	url = https://github.com/trivial-gray-streams/trivial-gray-streams.git
+[submodule "cl-ppcre"]
+	path = cl-ppcre
+	url = https://github.com/edicl/cl-ppcre.git
