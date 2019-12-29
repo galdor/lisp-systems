@@ -19,3 +19,36 @@
 [submodule "closer-mop"]
 	path = closer-mop
 	url = https://github.com/pcostanza/closer-mop
+[submodule "drakma"]
+	path = drakma
+	url = https://github.com/edicl/drakma.git
+[submodule "chipz"]
+	path = chipz
+	url = https://github.com/froydnj/chipz.git
+[submodule "usocket"]
+	path = usocket
+	url = https://github.com/usocket/usocket.git
+[submodule "flexi-streams"]
+	path = flexi-streams
+	url = https://github.com/edicl/flexi-streams.git
+[submodule "chunga"]
+	path = chunga
+	url = https://github.com/edicl/chunga.git
+[submodule "cl-base64"]
+	path = cl-base64
+	url = https://github.com/darabi/cl-base64.git
+[submodule "puri"]
+	path = puri
+	url = http://git.kpe.io/puri.git
+[submodule "split-sequence"]
+	path = split-sequence
+	url = https://github.com/sharplispers/split-sequence.git
+[submodule "cl-plus-ssl"]
+	path = cl-plus-ssl
+	url = https://github.com/cl-plus-ssl/cl-plus-ssl.git
+[submodule "bordeaux-threads"]
+	path = bordeaux-threads
+	url = https://github.com/sionescu/bordeaux-threads.git
+[submodule "trivial-garbage"]
+	path = trivial-garbage
+	url = https://github.com/trivial-garbage/trivial-garbage
