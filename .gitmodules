@@ -15,7 +15,7 @@
 	url = https://github.com/trivial-gray-streams/trivial-gray-streams.git
 [submodule "cl-ppcre"]
 	path = cl-ppcre
-	url = https://github.com/edicl/cl-ppcre.git
+	url = https://github.com/galdor-lisp/cl-ppcre.git
 [submodule "closer-mop"]
 	path = closer-mop
 	url = https://github.com/pcostanza/closer-mop
