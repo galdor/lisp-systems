@@ -52,3 +52,9 @@
 [submodule "trivial-garbage"]
 	path = trivial-garbage
 	url = https://github.com/trivial-garbage/trivial-garbage
+[submodule "json"]
+	path = json
+	url = https://github.com/galdor-lisp/json.git
+[submodule "check"]
+	path = check
+	url = https://github.com/galdor-lisp/check.git
