@@ -1,60 +1,60 @@
 [submodule "trivial-features"]
-	path = trivial-features
+	path = systems/trivial-features
 	url = https://github.com/trivial-features/trivial-features.git
 [submodule "alexandria"]
-	path = alexandria
+	path = systems/alexandria
 	url = https://gitlab.common-lisp.net/alexandria/alexandria.git
 [submodule "babel"]
-	path = babel
+	path = systems/babel
 	url = https://github.com/cl-babel/babel.git
 [submodule "cffi"]
-	path = cffi
+	path = systems/cffi
 	url = https://github.com/cffi/cffi.git
 [submodule "trivial-gray-streams"]
-	path = trivial-gray-streams
+	path = systems/trivial-gray-streams
 	url = https://github.com/trivial-gray-streams/trivial-gray-streams.git
 [submodule "cl-ppcre"]
-	path = cl-ppcre
+	path = systems/cl-ppcre
 	url = https://github.com/galdor-lisp/cl-ppcre.git
 [submodule "closer-mop"]
-	path = closer-mop
+	path = systems/closer-mop
 	url = https://github.com/pcostanza/closer-mop
 [submodule "drakma"]
-	path = drakma
+	path = systems/drakma
 	url = https://github.com/galdor-lisp/drakma.git
 [submodule "chipz"]
-	path = chipz
+	path = systems/chipz
 	url = https://github.com/froydnj/chipz.git
 [submodule "usocket"]
-	path = usocket
+	path = systems/usocket
 	url = https://github.com/usocket/usocket.git
 [submodule "flexi-streams"]
-	path = flexi-streams
+	path = systems/flexi-streams
 	url = https://github.com/edicl/flexi-streams.git
 [submodule "chunga"]
-	path = chunga
+	path = systems/chunga
 	url = https://github.com/edicl/chunga.git
 [submodule "cl-base64"]
-	path = cl-base64
+	path = systems/cl-base64
 	url = https://github.com/darabi/cl-base64.git
 [submodule "puri"]
-	path = puri
+	path = systems/puri
 	url = http://git.kpe.io/puri.git
 [submodule "split-sequence"]
-	path = split-sequence
+	path = systems/split-sequence
 	url = https://github.com/sharplispers/split-sequence.git
 [submodule "cl-plus-ssl"]
-	path = cl-plus-ssl
+	path = systems/cl-plus-ssl
 	url = https://github.com/cl-plus-ssl/cl-plus-ssl.git
 [submodule "bordeaux-threads"]
-	path = bordeaux-threads
+	path = systems/bordeaux-threads
 	url = https://github.com/sionescu/bordeaux-threads.git
 [submodule "trivial-garbage"]
-	path = trivial-garbage
+	path = systems/trivial-garbage
 	url = https://github.com/trivial-garbage/trivial-garbage
 [submodule "json"]
-	path = json
+	path = systems/json
 	url = https://github.com/galdor-lisp/json.git
 [submodule "check"]
-	path = check
+	path = systems/check
 	url = https://github.com/galdor-lisp/check.git
