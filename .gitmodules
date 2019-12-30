@@ -21,7 +21,7 @@
 	url = https://github.com/pcostanza/closer-mop
 [submodule "drakma"]
 	path = drakma
-	url = https://github.com/edicl/drakma.git
+	url = https://github.com/galdor-lisp/drakma.git
 [submodule "chipz"]
 	path = chipz
 	url = https://github.com/froydnj/chipz.git
