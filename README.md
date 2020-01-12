@@ -9,11 +9,11 @@ to load and configure ASDF.
 
 Using it is as simple as loading it, either in a standalone program or in a
 Common Lisp implementation initialization file. For example, for SBCL, if the
-`lisp-systems` repository has been cloned to `$HOME/common-lisp`, simply add
+`systems` repository has been cloned to `$HOME/common-lisp`, simply add
 the following to `$HOME/.sbclrc`:
 
 ```lisp
-(load #p"~/common-lisp/lisp-systems/initialize.lisp")
+(load #p"~/common-lisp/systems/initialize.lisp")
 ```
 
 ## Support

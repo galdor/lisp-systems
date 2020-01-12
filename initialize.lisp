@@ -15,7 +15,7 @@
 ;;;
 ;;; Create a temporary package to avoid polluting :CL-USER.
 ;;;
-(defpackage :lisp-systems-init
+(defpackage :systems-init
   (:use :cl)
   (:export
    :root-directory
@@ -24,13 +24,13 @@
    :asdf-fasl-path
    :load-asdf))
 
-(in-package :lisp-systems-init)
+(in-package :systems-init)
 
 (defvar *log-output* *error-output*
   "The stream used to log information during the initialization process.")
 
 (defun root-directory ()
-  "Return the root directory of the lisp-systems repository.
+  "Return the root directory of the systems repository.
 
 Signal an error if the initialization file was not loaded."
   (when (null *load-pathname*)
@@ -40,8 +40,8 @@ Signal an error if the initialization file was not loaded."
 
 (defun asdf-source-path ()
   "Locate and return the path of the ASDF source file bundled with the
-  lisp-systems repository."
-  (let ((root (lisp-systems-init:root-directory)))
+  systems repository."
+  (let ((root (systems-init:root-directory)))
     (make-pathname :directory (pathname-directory root)
                    :name "asdf" :type "lisp")))
 
@@ -65,13 +65,13 @@ lisp implementation and platform."
          (cache-path (make-pathname :directory `(:relative
                                                  ".cache"
                                                  "common-lisp"
-                                                 "lisp-systems"
+                                                 "systems"
                                                  ,directory-name))))
     (merge-pathnames cache-path (user-homedir-pathname))))
 
 (defun asdf-fasl-path ()
   "Return the path of the compiled version of the ASDF source file bundled
-  with the lisp-systems repository. The location of the file depends on
+  with the systems repository. The location of the file depends on
   runtime information to ensure we always load a file which was compiled with
   the currently running Lisp implementation."
   (let ((file-path (make-pathname :directory '(:relative "asdf")
@@ -79,11 +79,11 @@ lisp implementation and platform."
     (merge-pathnames file-path (fasl-directory))))
 
 (defun load-asdf ()
-  "Locate and load the copy of ASDF bundled with lisp-systems.
+  "Locate and load the copy of ASDF bundled with systems.
 
 Compile the ASDF main file since loading it from source is slow."
-  (let ((asdf-source-path (lisp-systems-init:asdf-source-path))
-        (asdf-fasl-path (lisp-systems-init:asdf-fasl-path)))
+  (let ((asdf-source-path (systems-init:asdf-source-path))
+        (asdf-fasl-path (systems-init:asdf-fasl-path)))
     (ensure-directories-exist asdf-fasl-path)
     (unless (probe-file asdf-source-path)
       (error "asdf file not found at ~S" asdf-source-path))
@@ -99,9 +99,9 @@ Compile the ASDF main file since loading it from source is slow."
 ;;;
 (in-package :cl-user)
 
-(lisp-systems-init:load-asdf)
+(systems-init:load-asdf)
 
 ;;;
 ;;; Cleaning
 ;;;
-(delete-package :lisp-systems-init)
+(delete-package :systems-init)
