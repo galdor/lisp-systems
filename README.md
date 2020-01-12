@@ -23,11 +23,12 @@ The initialization file has been tested on SBCL, CCL, ECL and CLISP.
 The repository bundles a recent version of ASDF for two reasons:
 - Implementations provide different versions of ASDF, making it difficult to
   rely on specific features of ASDF or UIOP.
-- Some implementations such as ASDF provide old versions of ASDF and refuse to
+- Some implementations such as SBCL provide old versions of ASDF and refuse to
   update them.
 
 The `asdf` Git submodule points to a recent release of the [official ASDF
 repository](https://gitlab.common-lisp.net/asdf/asdf).
 
-After any update, the [ASDF file](asdf/build/asdf.lisp) must be rebuilt by
-running `make` in the `asdf` directory.
+## Update
+The `utils/update-asdf.sh` script can be used to update ASDF to a specific
+version. It will update the submodule and will rebuild the `asdf.lisp` file.

@@ -41,10 +41,9 @@ Signal an error if the initialization file was not loaded."
 (defun asdf-source-path ()
   "Locate and return the path of the ASDF source file bundled with the
   lisp-systems repository."
-  (let ((root (lisp-systems-init:root-directory))
-        (path (make-pathname :directory '(:relative "asdf" "build")
-                             :name "asdf" :type "lisp")))
-    (merge-pathnames path root)))
+  (let ((root (lisp-systems-init:root-directory)))
+    (make-pathname :directory (pathname-directory root)
+                   :name "asdf" :type "lisp")))
 
 (defun fasl-directory ()
   "Return the path of the directory used to store fasl files for the current
