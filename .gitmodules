@@ -58,3 +58,6 @@
 [submodule "snowsyn-json"]
 	path = systems/snowsyn-json
 	url = https://github.com/galdor-lisp/snowsyn-json.git
+[submodule "asdf"]
+	path = asdf
+	url = https://gitlab.common-lisp.net/asdf/asdf.git
