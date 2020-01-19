@@ -55,3 +55,6 @@
 [submodule "asdf"]
 	path = asdf
 	url = https://gitlab.common-lisp.net/asdf/asdf.git
+[submodule "tungsten"]
+	path = tungsten
+	url = https://github.com/galdor/tungsten.git
