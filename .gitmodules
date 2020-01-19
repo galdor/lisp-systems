@@ -52,12 +52,6 @@
 [submodule "trivial-garbage"]
 	path = systems/trivial-garbage
 	url = https://github.com/trivial-garbage/trivial-garbage
-[submodule "snowsyn-check"]
-	path = systems/snowsyn-check
-	url = https://github.com/galdor-lisp/snowsyn-check.git
-[submodule "snowsyn-json"]
-	path = systems/snowsyn-json
-	url = https://github.com/galdor-lisp/snowsyn-json.git
 [submodule "asdf"]
 	path = asdf
 	url = https://gitlab.common-lisp.net/asdf/asdf.git
